@@ -28,3 +28,7 @@ $ foreman start
 ## License
 
 MIT Licensed.
+
+## Notice
+
+Please respect the Presto website's [Terms and Conditions](https://www.prestocard.ca/en-US/Pages/ContentPages/Terms.aspx).
