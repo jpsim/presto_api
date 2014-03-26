@@ -1,6 +1,10 @@
 require 'presto_api'
 require 'json'
 
+before do
+	request.path_info = '/' unless params[:api_key] == ENV['api_key']
+end
+
 get '/' do
   "Welcome to the Presto API"
 end
