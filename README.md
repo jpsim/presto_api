@@ -13,9 +13,9 @@ REST API for interacting with [Presto cards](http://prestocard.ca) using the [`p
 
 ```shell
 $ bundle
-$ heroku create -s cedar presto_api
+$ heroku create -s cedar presto-api
 $ git push heroku master
-$ bundle exec heroku open
+$ heroku open
 ```
 
 ## Running Locally
