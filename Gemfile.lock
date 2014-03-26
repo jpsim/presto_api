@@ -37,6 +37,8 @@ GEM
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
+    rack-throttle (0.3.0)
+      rack (>= 1.0.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.4)
@@ -59,4 +61,5 @@ DEPENDENCIES
   foreman
   heroku
   presto_api
+  rack-throttle
   sinatra
