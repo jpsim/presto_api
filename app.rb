@@ -1,8 +1,14 @@
 require 'presto_api'
 require 'json'
 
+helpers do
+  def request_headers
+    env.inject({}){|acc, (k,v)| acc[$1.downcase] = v if k =~ /^http_(.*)/i; acc}
+  end  
+end
+
 before do
-	request.path_info = '/' unless headers['x-api-key'] == ENV['api_key']
+	request.path_info = '/' unless request_headers['x_api_key'] == ENV['api_key']
 end
 
 get '/' do
